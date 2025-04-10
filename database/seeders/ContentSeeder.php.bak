@@ -1,0 +1,146 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class ContentSeeder extends Seeder
+{
+    public function run()
+    {
+        DB::table('contents')->insert([
+            // Existing photography content
+            [
+                'section' => 'photography',
+                'content_key' => 'photo_1',
+                'content_text' => null,
+                'image_path' => 'assets/img/photo-1.jpg',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'section' => 'photography', 
+                'content_key' => 'photo_2',
+                'content_text' => null,
+                'image_path' => 'assets/img/photo-2.jpg',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'section' => 'photography', 
+                'content_key' => 'photo_3',
+                'content_text' => null,
+                'image_path' => 'assets/img/photo-3.jpg',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+
+            // New project-7 content
+            [
+                'section' => 'project-7',
+                'content_key' => 'title',
+                'content_text' => 'Samokat office <br> <span class="fw-200">© 2021</span>',
+                'image_path' => '',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'section' => 'project-7',
+                'content_key' => 'categories',
+                'content_text' => 'Architecture,Interior Design',
+                'image_path' => '',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'section' => 'project-7',
+                'content_key' => 'photographer',
+                'content_text' => 'KIDZ Studio',
+                'image_path' => '',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'section' => 'project-7',
+                'content_key' => 'main_image',
+                'content_text' => null,
+                'image_path' => 'assets/img/portfolio/project7/1.jpg',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'section' => 'project-7',
+                'content_key' => 'subheading',
+                'content_text' => 'ART OF HOME',
+                'image_path' => '',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'section' => 'project-7',
+                'content_key' => 'studio_name',
+                'content_text' => 'MAKHNO STUDIO',
+                'image_path' => '',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'section' => 'project-7',
+                'content_key' => 'type',
+                'content_text' => 'Industrial enterprise office',
+                'image_path' => '',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'section' => 'project-7',
+                'content_key' => 'location',
+                'content_text' => 'Ukraine',
+                'image_path' => '',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'section' => 'project-7',
+                'content_key' => 'year',
+                'content_text' => '2022',
+                'image_path' => '',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'section' => 'project-7',
+                'content_key' => 'team',
+                'content_text' => 'Serhii Makhno, Olha Sobchyshyna, Alex Rekhlitskyi',
+                'image_path' => '',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'section' => 'project-7',
+                'content_key' => 'description',
+                'content_text' => 'FUTURA is an uncompromising example of an office building in the third millennium. A lot of bold decisions, starting with the color and ending with the rooftop garden. FUTURA challenges the ordinary and mundane, setting unprecedented standards for Ukrainian architecture.',
+                'image_path' => '',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'section' => 'project-7',
+                'content_key' => 'gallery_images',
+                'content_text' => '["assets/img/portfolio/project7/10.jpg","assets/img/portfolio/project7/11.jpg","assets/img/portfolio/project7/12.jpg"]',
+                'image_path' => '',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'section' => 'project-7',
+                'content_key' => 'next_project_image',
+                'content_text' => null,
+                'image_path' => 'assets/img/portfolio/project1/1.jpg',
+                'created_at' => now(),
+                'updated_at' => now()
+            ]
+        ]);
+    }
+}
